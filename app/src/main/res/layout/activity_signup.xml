@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_signup"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#03a9f4"
+   android:gravity="center"
+    tools:context="com.example.quiztime.quiztime.signup">
+
+    <!--ID icone == signtext-->
+    <!--ID edit text elail == emails-->
+    <!-- ID edit text firstnam == fnams -->
+    <!-- ID Edit Text name = names -->
+    <!-- ID Edit Text password = passwords -->
+    <!-- ID Button signup = buttonsign -->
+    <!-- ID Card = c2 -->
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="Sign Up"
+        android:gravity="center"
+        android:textColor="#fff"
+        android:textSize="40dp"
+        android:layout_marginBottom="50dp"
+        android:id="@+id/signtext"/>
+    <EditText
+        style="@style/edit"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:inputType="textEmailAddress"
+        android:hint="Type Your Email"
+        android:drawableLeft="@drawable/ic_action_email"
+
+        android:id="@+id/emails"/>
+
+    <EditText
+        style="@style/edit"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:inputType="textPersonName"
+        android:hint="Type Your FirstName"
+        android:drawableLeft="@drawable/ic_action_name"
+
+        android:id="@+id/fnams" />
+    <EditText
+        style="@style/edit"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:inputType="textPersonName"
+        android:hint="Type Your Name"
+        android:drawableLeft="@drawable/ic_action_name"
+
+        android:id="@+id/names" />
+
+
+    <EditText
+        style="@style/edit"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:inputType="textPassword"
+        android:hint="Type Password (+6)"
+        android:drawableLeft="@drawable/ic_action_pass"
+
+        android:id="@+id/passwords" />
+
+    <android.support.v7.widget.CardView
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="25dp"
+        app:cardBackgroundColor="@color/logiin"
+        app:cardCornerRadius="25dp"
+        android:id="@+id/c2"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <Button
+            android:text="Sign Up"
+            android:textColor="#fff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00ffffff"
+            android:onClick="startsignup"
+            android:id="@+id/buttonsign" />
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>

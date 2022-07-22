@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/categoiries"
+            android:title="Categoiries" />
+        <item
+            android:id="@+id/friendshighscore"
+            android:title="Friends high score" />
+        <item
+            android:id="@+id/Categorieshighcore"
+            android:title="each categorie's score" />
+        <item
+            android:id="@+id/logout"
+            android:title="Logout" />
+
+        </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/aboutgame"
+                android:title="About the Game" />
+            <item
+                android:id="@+id/rateus"
+                android:title="Rate us" />
+        </menu>
+    </item>
+</menu>

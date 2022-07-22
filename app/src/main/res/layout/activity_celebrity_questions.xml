@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    tools:context="com.example.quiztime.quiztime.CelebrityQuestions">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="180dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            app:cardBackgroundColor="@color/logiin"
+            app:cardCornerRadius="25dp"
+            >
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="65dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="2pt"
+                    android:inputType="textPersonName"
+                    android:text="category :"
+                    android:textColor="#fff"
+                    android:ems="10"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/starcat"
+                    android:layout_weight="1"
+
+                    android:id="@+id/img"
+                    />
+
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="180dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            app:cardBackgroundColor="@color/logiin"
+            app:cardCornerRadius="25dp">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:layout_width="65dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:inputType="textPersonName"
+                    android:text="Score :"
+                    android:textSize="20dp"
+                    android:textColor="#fff"
+                    android:ems="10"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="65dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:textStyle="bold"
+                    android:textColor="#ffff"
+                    android:text="1234"
+                    android:layout_weight="1"
+
+                    android:id="@+id/score"
+                    />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/inanna"
+            android:layout_weight="1"
+            android:id="@+id/questimage"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="60dp">
+
+        <Button
+            android:text="Button1"
+            android:layout_width="wrap_content"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:layout_marginLeft="5dp"
+            android:background="@color/logiin"
+            android:layout_height="wrap_content"
+            android:onClick="checkanswear1"
+            android:layout_weight="1"
+            android:id="@+id/answear1"/>
+
+        <Button
+            android:text="Button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:onClick="checkanswear2"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:textColor="#fff"
+            android:background="@color/logiin"
+            android:layout_weight="1"
+            android:id="@+id/answear2"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <Button
+            android:text="Button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:onClick="checkanswear3"
+            android:background="@color/logiin"
+            android:layout_weight="1"
+            android:id="@+id/answear3"/>
+
+        <Button
+            android:text="Button4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:onClick="checkanswear4"
+            android:background="@color/logiin"
+            android:layout_weight="1"
+            android:id="@+id/answear4"/>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/next"
+        android:onClick="passquest"
+        android:id="@+id/pass" />
+</LinearLayout>

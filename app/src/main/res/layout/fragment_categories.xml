@@ -1,0 +1,155 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/activity_categor"
+    android:background="@color/colorPrimary"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.quiztime.quiztime.categories">
+
+    <!-- TODO: Update blank fragment layout -->
+    <android.support.v7.widget.CardView
+        android:layout_marginBottom="20dp"
+        android:layout_height="450dp"
+        android:layout_width="350dp"
+        app:cardCornerRadius="30dp"
+        app:cardBackgroundColor="@color/logiin"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true">
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!--Line 1-->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="82dp"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/football"
+                    android:onClick="footballquestions"
+                    android:src="@drawable/footballcat"/>
+
+                <ImageView
+                    android:layout_width="82dp"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/countcat"
+                    android:onClick="countriesquestions"
+                    android:id="@+id/countries" />
+
+                <ImageView
+                    android:layout_width="82dp"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/starcat"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/celebreties" />
+
+            </LinearLayout>
+
+
+            <!--Line 2-->
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="82dp"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/brandscat"
+                    android:id="@+id/brands" />
+
+                <ImageView
+                    android:layout_width="82dp"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/carcat"
+                    android:id="@+id/cars" />
+
+                <ImageView
+                    android:layout_width="82dp"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/scientistscat"
+                    android:id="@+id/scientists" />
+            </LinearLayout>
+
+            <!--Line 3-->
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/cities"
+                    android:layout_width="82dp"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="10dp"
+                    app:srcCompat="@drawable/citycat" />
+
+                <ImageView
+                    android:layout_width="82dp"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/musiccat"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/music" />
+                <ImageView
+                    android:layout_width="82dp"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/basketballcat"
+                    android:id="@+id/basketball" />
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:gravity="center">
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Choose One Category"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:ems="10"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="53dp"
+        android:id="@+id/editText" />
+
+</RelativeLayout>
